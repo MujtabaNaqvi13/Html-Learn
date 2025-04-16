@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Information</title>
+</head>
+<body>
+    <h1>Personal Information</h1>
+
+    <form>
+        <fieldset>
+            <!--Full Name, Age and Email are asked here-->
+            <label for="name">Enter your full name</label>
+            <input type="text" name="full_name" id="name" placeholder="Name"><br>
+
+            <label for="age">Enter your age</label>
+            <input type="number" name="age" id="age" placeholder="Age"><br>
+
+            <label for="email">Enter your email</label>
+            <input type="email" name="email" id="email" placeholder="Email"><br>
+
+            <!--Here it asks for Gender-->
+            <p>Please enter your gender:</p>
+            <input type="radio" name="Gender" id="male" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" name="Gender" id="female" value="female">
+            <label for="female">Female</label><br>
+        </fieldset>
+
+        <fieldset>
+            <!--Here it asks for Interests-->
+            <p>Please enter your interests:</p>
+
+            <input type="checkbox" name="interests" id="coding" value="coding">
+            <label for="coding">Coding</label><br>
+
+            <input type="checkbox" name="interests" id="gaming" value="gaming">
+            <label for="gaming">Gaming</label><br>
+
+            <input type="checkbox" name="interests" id="reading" value="reading">
+            <label for="reading">Reading</label><br>
+
+            <!--Select your favourite subject-->
+            <label for="subject">Favorite Subject:</label>
+            <select id="subject" name="subject">
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+            </select><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
